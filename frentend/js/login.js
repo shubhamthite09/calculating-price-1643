@@ -41,5 +41,6 @@ signbut.addEventListener("click",(e)=>{
             body:JSON.stringify(obj)
         }).then((res)=>res.json()).then((res)=>{
             console.log(res);
+            alert("sign up done")
         }).catch((err)=>console.log(err))
     })
