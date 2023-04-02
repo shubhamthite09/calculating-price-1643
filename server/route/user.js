@@ -29,7 +29,7 @@ userRouter.post("/log",async(req,res)=>{
         else{
             if(await bcrypt.compare(req.body.password,alredy.password)){
                 let token = jwt.sign({user:alredy._id,name:alredy.name},process.env.PrivetKey,{expiresIn:"1h"})
-                res.send({msg:"done",token})
+                res.send({msg:"done",token,name:alredy.name})
             }else{
                 res.json({err:"password wrong"})
             }
