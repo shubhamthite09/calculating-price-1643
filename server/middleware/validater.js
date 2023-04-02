@@ -7,7 +7,6 @@ const validate = (req,res,next)=>{
         jwt.verify(token,process.env.PrivetKey,(err,decoded)=>{
             if(err){res.send({err:`login first`})}
             else{
-                req.body.user=decoded.user
                 req.body.name=decoded.name
                 next()
             }
