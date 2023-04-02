@@ -6,7 +6,7 @@ alldivs.forEach((ele,ind)=> {
     console.log(ele);
     ele.addEventListener("click",()=>{
         console.log("yes");
-        fetch(`http://localhost:8900/work/pro`, {
+        fetch(`https://magnificent-dove-kilt.cyclic.app/work/pro`, {
         method: "GET",
         headers: { 
             "Content-type": "Application/json",

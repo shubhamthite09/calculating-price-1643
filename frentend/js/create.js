@@ -1,4 +1,4 @@
-fetch(`http://localhost:8900/exe/`, {
+fetch(`https://magnificent-dove-kilt.cyclic.app/exe/`, {
   method: "GET",
   headers: { "Content-type": "Application/json" },
 })
@@ -35,7 +35,7 @@ function render(data) {
       };
       console.log(obj);
       console.log(ele._id);
-      fetch(`http://localhost:8900/work/`, {
+      fetch(`https://magnificent-dove-kilt.cyclic.app/work/`, {
         method: "POST",
         headers: {
           "Content-type": "Application/json",

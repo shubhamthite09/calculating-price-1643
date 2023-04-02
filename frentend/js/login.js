@@ -7,7 +7,7 @@ const buton = document.getElementById("log")
             email:form.email.value,
             password:form.password.value
         }
-        fetch(`http://localhost:8900/user/log`,{
+        fetch(`https://magnificent-dove-kilt.cyclic.app/user/log`,{
             method:'POST',
             headers:{'Content-type':'Application/json'},
             body:JSON.stringify(obj)
@@ -35,7 +35,7 @@ signbut.addEventListener("click",(e)=>{
             password:dform.pswd.value
         }
         console.log(obj);
-        fetch(`http://localhost:8900/user/reg`,{
+        fetch(`https://magnificent-dove-kilt.cyclic.app/user/reg`,{
             method:'POST',
             headers:{'Content-type':'Application/json'},
             body:JSON.stringify(obj)

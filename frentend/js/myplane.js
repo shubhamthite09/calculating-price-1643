@@ -2,7 +2,7 @@ let user = JSON.parse(localStorage.getItem("userInfo"));
 var globleUser;
 var globleExe;
 
-fetch(`http://localhost:8900/exe`, {
+fetch(`https://magnificent-dove-kilt.cyclic.app/exe`, {
     method: "GET",
     headers: { "Content-type": "Application/json",
     authorization: `Bearer ${user.token}`,
@@ -15,7 +15,7 @@ fetch(`http://localhost:8900/exe`, {
     })
     .catch((err) => console.log(err));
 
-fetch(`http://localhost:8900/work`, {
+fetch(`https://magnificent-dove-kilt.cyclic.app/work`, {
     method: "GET",
     headers: { "Content-type": "Application/json",
     authorization: `Bearer ${user.token}`,
@@ -68,7 +68,7 @@ function render(data) {
     add.innerText = "remove";
     add.addEventListener("click", () => {
       
-      fetch(`http://localhost:8900/work/${ele.del}`, {
+      fetch(`https://magnificent-dove-kilt.cyclic.app/work/${ele.del}`, {
         method: "DELETE",
         headers: {
           "Content-type": "Application/json",
